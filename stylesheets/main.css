@@ -1,0 +1,77 @@
+.form {
+  text-align: center;
+  text-align: center;
+  margin: 0 auto;
+  font-size: 20px;
+  font-family: Calibri;
+}
+
+.form input {
+  font-family: Calibri;
+  background-color: gray;
+  border: none;
+  border-radius: 12px;
+  color: white;
+  padding: 15px 20px;
+  font-size: 16px;
+}
+
+.links {
+  margin-top: 50px;
+  text-align: center;
+  margin: 0 auto;
+  font-size: 30px;
+  font-family: Calibri;
+}
+
+.links a {
+  cursor:pointer;
+  display:block;
+  text-decoration: none;
+  color: black;
+}
+
+.links span {
+  font-size: 15px;
+  margin: 20px auto;
+  display: block;
+  border: 1px solid black;
+}
+
+.links h1 {
+  font-size: 45px;
+}
+
+.links img {
+  width: 499px;
+  height: 125px;
+  margin-bottom: 40px;
+}
+
+.links button .button{
+  cursor:pointer;
+  font-family: Calibri;
+  background-color: gray;
+  border: none;
+  border-radius: 12px;
+  color: white;
+  padding: 15px 32px;
+  font-size: 20px;
+  display: inline-block;
+}
+
+.links input[type=submit] {
+    cursor: pointer;
+    font-family: Calibri;
+    background-color: gray;
+    border: none;
+    border-radius: 12px;
+    color: white;
+    padding: 15px 32px;
+    font-size: 20px;
+    display: inline-block;
+}
+
+.table, .th, .td, .tr {
+    border: 1px solid black;
+}
