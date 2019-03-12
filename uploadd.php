@@ -1,7 +1,17 @@
 
-
 <?php  
-$connect = mysqli_connect("localhost", "username", "password", fydp);
+$servername = "localhost";
+$username = "root";
+$password = "password";
+
+// Create connection
+$connect = new mysqli($servername, $username, $password);
+
+// Check connection
+if ($connect->connect_error) {
+    die("Connection failed: " . $connect->connect_error);
+} 
+echo "Connected successfully";
 if(isset($_POST["submit"]))
 {
  if($_FILES['file']['name'])
