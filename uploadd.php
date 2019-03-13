@@ -1,6 +1,5 @@
-
 <?php  
-$servername = "localhost";
+$servername = "35.237.124.28";
 $username = "root";
 $password = "password";
 
@@ -24,7 +23,7 @@ if(isset($_POST["submit"]))
    {
     $item1 = mysqli_real_escape_string($connect, $data[0]);  
                 $item2 = mysqli_real_escape_string($connect, $data[1]);
-                $query = "INSERT into RawData2(ActualProduction, Cavity, Closingblow, Closingshot, Date, DownTime, GoodMaterial, Machine, OEE, Openingblow, Openingshot, Performance by Product, PlannedProduction, Product, Purge, QualitybyProduct, Reason, Shift, WasteMaterial, Weight, availability, cycletime, goodbottles, numbags, qauntitybag, rejectedbottles, rejectedperform, runninghours, totalblow, totalshot, wip) 
+                $query = "INSERT into RawData2(Date, Shift, Product, Weight, Machine, Cavity, Openingshot, Closingshot, Openingblow, Closingblow, numbags, quantitybag, wip, Purge, cycletime, runninghours, totalshot, totalblow, goodbottles, rejectedperform, rejectedbottles, GoodMaterial, WasteMaterial, PlannedProduction, ActualProduction, Performance by Product, QualitybyProduct, availability, OEE, DownTime, Reason)  
                 Values ('". $toInsert[8] . "','" . $toInsert[2] . "','" . $toInsert[10] . "','" . $toInsert[10] . "','" . $toInsert[2] . "','" . $toInsert[10] . "','" . $toInsert[10] . "','" . $toInsert[2] . "','" . $toInsert[10] . "','" . $toInsert[10] . "','" . $toInsert[2] . "','" . $toInsert[10] . "','" . $toInsert[10] . "','" . $toInsert[2] . "','" . $toInsert[10] . "','" . $toInsert[10] . "','" . $toInsert[2] . "','" . $toInsert[10] . "','" . $toInsert[10] . "','" . $toInsert[2] . "','" . $toInsert[10] . "','" . $toInsert[10] . "','" . $toInsert[2] . "','" . $toInsert[10] . "','" . $toInsert[10] . "','" . $toInsert[2] . "','" . $toInsert[10] . "','" . $toInsert[10] . "','" . $toInsert[2] . "','" . $toInsert[10] . "','" . $toInsert[10] "');
                 mysqli_query($connect, $query);
    }
