@@ -1,39 +1,45 @@
 <html>
-	
 	<head>
-		<title>Upload Page</title>
-	</head>
-	<link rel="stylesheet" href="stylesheets/default.css">
+  		<title>Upload Page</title>
+<style>
+.wrapper {
+    text-align: center;
+}
+</style>
+  	</head>
+	 <link rel="stylesheet" href="stylesheets/default.css">
 
-	<body>
-	<center>
-		<div class="default">
-			 <div class = "logout">
-	          <table>
-	            <th>
-	               <a href="index.html"> Menu </a>
-	            </th>
-	            <th width = 80%></th>
-	            <th>
-	                <a href="LoginPage.html"> Logout </a>
-	            </th>
-	          </table>
-        	</div>
-	        
+		<body>
+			<div class = "default">
+			<center>
+	
+			
+			<ul>
+  				<li><a href="index.html">Home</a></li>
+  				<li><a href="Data.html">Data</a></li>
+  				<li><a href="Main.html">Dashboards</a></li>
+  				<li style="float:right"><a href="Help.html">Help</a></li>
+			</ul>
+	
+			 <h1> Upload Data </h1>
 
-				<h1>Upload OEE FIle</h1>
-				
-				Please upload excel file.<br><br>
-
-		
-<form
-    action="uploadd.php" method="post" enctype="multipart/form-data">
-    <input type="file" name="fileToUpload" id="fileToUpload">
-    <input type="submit" class="button" value="Upload" name="submit">
-</form>
-
+			</div>
+	
+				<ul>
+  					<li><a href="Template.xlsx" download>Download Excel Template</a></li>
+  					<li><a href="UploadPage.html">Upload Excel Template</a></li>
+  					<li><a href="DataExport.html">Export Dashboard Data</a></li>
+				</ul>
+<div class="wrapper">
+			<p>
+				<font color="white" face="Calibri" >Please upload your template here:</font>
+			</p>
+			<form
+    			action="uploadd.php" method="post" enctype="multipart/form-data">
+    			<input type="file" name="fileToUpload" id="fileToUpload">
+    			<input type="submit" class="button" value="Upload" name="submit">
+			</form>
 		</div>
-	</center>
-	</body>
 
+		</body>
 </html>
