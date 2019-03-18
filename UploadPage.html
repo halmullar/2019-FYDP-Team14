@@ -1,39 +1,86 @@
 <html>
-	
 	<head>
-		<title>Upload Page</title>
-	</head>
-	<link rel="stylesheet" href="stylesheets/default.css">
+  		<title>Upload Page</title>
+<style>
+.wrapper {
+    text-align: center;
+}
+.john ul {
+  list-style-type: none;
+  font-family: Helvetica;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #000;
+  top: 0;
+  display: block;
+  
+}
 
-	<body>
-	<center>
-		<div class="default">
-			 <div class = "logout">
-	          <table>
-	            <th>
-	               <a href="index.html"> Menu </a>
-	            </th>
-	            <th width = 80%></th>
-	            <th>
-	                <a href="LoginPage.html"> Logout </a>
-	            </th>
-	          </table>
-        	</div>
-	        
+.john li {
+  float: left;
+    border-right:1px solid #bbb;
+}
 
-				<h1>Upload OEE FIle</h1>
-				
-				Please upload excel file.<br><br>
+.john li:last-child {
+  border-right: none;
+}
+
+.john li a {
+  color: white;
+  display: block;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.john li a:hover {
+  background-color: #111;
+}
+</style>
+  	</head>
+	 <link rel="stylesheet" href="stylesheets/default.css">
+
+		<body>
+		
+			<center>
+	
+			<div class = "john">
+			<ul>
+  				<li><a href="index.html">Home</a></li>
+  				<li><a href="Data.html">Data</a></li>
+  				<li><a href="Main.html">Dashboards</a></li>
+  				<li style="float:right"><a href="Help.html">Help</a></li>
+			</ul>
+		</div>
+	
 
 		
-<form
-    action="uploadd.php" method="post" enctype="multipart/form-data">
-    <input type="file" name="fileToUpload" id="fileToUpload">
-    <input type="submit" class="button" value="Upload" name="submit">
-</form>
+				 <img src = "DataImage.jpg" alt = "DataImage" 				
+			 		frameborder="0"
+				    scrolling ="yes"
+				    width="100%"
+				    height="50%"
+				    allowtransparency >
+	
+				
+				<ul>
+  					<li><a href="TemplateOEE.csv" download>Download Excel Template</a></li>
+  					<li><a href="UploadPage.html">Upload Excel Template</a></li>
+  					<li><a href="DataExport.html">Export Dashboard Data</a></li>
+				</ul>
+				
 
+<div class="wrapper">
+			<p>
+				<font color="white" face="Helvetica" >Please upload your template here:</font>
+			</p>
+			<form
+    			action="uploadd.php" method="post" enctype="multipart/form-data">
+    			<input type="file" name="fileToUpload" id="fileToUpload">
+    			<input type="submit" class="button" value="Upload" name="submit">
+			</form>
 		</div>
-	</center>
-	</body>
 
+		</body>
 </html>

@@ -101,6 +101,8 @@ ul {
   position: -webkit-sticky; /* Safari */
   position: sticky;
   top: 0;
+  display: inline-block;
+  
 }
 
 li {
