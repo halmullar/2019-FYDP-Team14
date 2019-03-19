@@ -26,7 +26,7 @@ if(isset($_POST["Import"])){
                 
 
 
-                Values ("'" . $toInsert[8] . "','" . $toInsert[10] . "','" . $toInsert[10] . "','" . $toInsert[10] . "','" . $toInsert[10] . "','" . $toInsert[10] . "','" . $toInsert[10] . "','" . $toInsert[10] . "','" . $toInsert[10] . "','" . $toInsert[10] . "','" . $toInsert[10] . "','" . $toInsert[10] . "','" . $toInsert[10] . "','" . $toInsert[10] . "','" . $toInsert[10] . "','" . $toInsert[10] . "','" . $toInsert[10] . "','" . $toInsert[10] . "','" . $toInsert[10] . "','" . $toInsert[10] . "','" . $toInsert[10] . "','" . $toInsert[10] . "','" . $toInsert[10] . "','" . $toInsert[10] . "','" . $toInsert[10] . "','" . $toInsert[10] . "','" . $toInsert[10] . "','" . $toInsert[10] . "','" . $toInsert[10] . "','" . $toInsert[10] . "','" . $toInsert[10] "'");
+                Values ('" . $toInsert[8] . "','" . $toInsert[10] . "','" . $toInsert[10] . "','" . $toInsert[10] . "','" . $toInsert[10] . "','" . $toInsert[10] . "','" . $toInsert[10] . "','" . $toInsert[10] . "','" . $toInsert[10] . "','" . $toInsert[10] . "','" . $toInsert[10] . "','" . $toInsert[10] . "','" . $toInsert[10] . "','" . $toInsert[10] . "','" . $toInsert[10] . "','" . $toInsert[10] . "','" . $toInsert[10] . "','" . $toInsert[10] . "','" . $toInsert[10] . "','" . $toInsert[10] . "','" . $toInsert[10] . "','" . $toInsert[10] . "','" . $toInsert[10] . "','" . $toInsert[10] . "','" . $toInsert[10] . "','" . $toInsert[10] . "','" . $toInsert[10] . "','" . $toInsert[10] . "','" . $toInsert[10] . "','" . $toInsert[10] . "','" . $toInsert[10] ."'")";
                 mysqli_query($connect, $query);
                    $result = mysqli_query($con, $sql);
         if(!isset($result))
