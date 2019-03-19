@@ -6,9 +6,9 @@ $password = "password";
 // Create connection
 $connect = new mysqli($servername, $username, $password);
 if ($connect) {
-  echo 'conected';
+  echo 'connected';
 } else {
-  echo 'not conected';
+  echo 'not connected';
 }
 
 if(isset($_POST["Import"])){
@@ -22,9 +22,11 @@ if(isset($_POST["Import"])){
           while (($getData = fgetcsv($file, 10000, ",")) !== FALSE)
            {
 
-
              $sql = "INSERT into RawData3(Date, Shift, Product, Weight, Machine, Cavity, Openingshot, Closingshot, Openingblow, Closingblow, numbags, quantitybag, wip, Purge, cycletime, runninghours, DownTime, Reason, totalshot, totalblow, goodbottles, rejectedperform, rejectedbottles, GoodMaterial, WasteMaterial, PlannedProduction, ActualProduction, Performance by Product, QualitybyProduct, availability, OEE)  
-                Values ('". $toInsert[8] . "','" . $toInsert[10] . "','" . $toInsert[10] . "','" . $toInsert[10] . "','" . $toInsert[10] . "','" . $toInsert[10] . "','" . $toInsert[10] . "','" . $toInsert[10] . "','" . $toInsert[10] . "','" . $toInsert[10] . "','" . $toInsert[10] . "','" . $toInsert[10] . "','" . $toInsert[10] . "','" . $toInsert[10] . "','" . $toInsert[10] . "','" . $toInsert[10] . "','" . $toInsert[10] . "','" . $toInsert[10] . "','" . $toInsert[10] . "','" . $toInsert[10] . "','" . $toInsert[10] . "','" . $toInsert[10] . "','" . $toInsert[10] . "','" . $toInsert[10] . "','" . $toInsert[10] . "','" . $toInsert[10] . "','" . $toInsert[10] . "','" . $toInsert[10] . "','" . $toInsert[10] . "','" . $toInsert[10] . "','" . $toInsert[10] "');
+                
+
+
+                Values ("'" . $toInsert[8] . "','" . $toInsert[10] . "','" . $toInsert[10] . "','" . $toInsert[10] . "','" . $toInsert[10] . "','" . $toInsert[10] . "','" . $toInsert[10] . "','" . $toInsert[10] . "','" . $toInsert[10] . "','" . $toInsert[10] . "','" . $toInsert[10] . "','" . $toInsert[10] . "','" . $toInsert[10] . "','" . $toInsert[10] . "','" . $toInsert[10] . "','" . $toInsert[10] . "','" . $toInsert[10] . "','" . $toInsert[10] . "','" . $toInsert[10] . "','" . $toInsert[10] . "','" . $toInsert[10] . "','" . $toInsert[10] . "','" . $toInsert[10] . "','" . $toInsert[10] . "','" . $toInsert[10] . "','" . $toInsert[10] . "','" . $toInsert[10] . "','" . $toInsert[10] . "','" . $toInsert[10] . "','" . $toInsert[10] . "','" . $toInsert[10] "'");
                 mysqli_query($connect, $query);
                    $result = mysqli_query($con, $sql);
         if(!isset($result))
